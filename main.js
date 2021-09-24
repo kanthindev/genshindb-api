@@ -1,6 +1,6 @@
 const jsonServer = require('json-server')
 const server = jsonServer.create()
-const router = jsonServer.router('db.json')
+const router = jsonServer.router('./node_modules/genshin-db/src/min/data.min.json')
 const middlewares = jsonServer.defaults()
 
 // Set default middlewares (logger, static, cors and no-cache)
